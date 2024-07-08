@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio SB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sofia Brugo</div>
+        <div class="links-container">
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+<!-- <div class="social-links-container">
+    <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Whatsapp</a></li>
+    </ul>
+</div> -->
+    <nav id="hamburger-nav">
+        <div class="logo">Sofia Brugo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">Sobre Mi</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilePic.jpeg" alt="Sofia Brugo profile pic" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">¡Hola, soy</p>
+            <h1 class="title">Sofia Brugo</h1>
+            <p class="section__text__p2">Programadora</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onClick="window.open('./assets/ProgramadorCv.pdf')">Descargá CV</button>
+                <button class="btn btn-color-1" onClick="location.href='./#contact'">Contacto</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mi perfil de LinkedIn" class="icon" onClick="location.href='https://www.linkedin.com/in/sofiabrugo/'">
+                <img src="./assets/github.png" alt="Mi perfil de Github" class="icon" onClick="location.href='https://github.com/Sbrugo'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">
+            Conocé más 
+        </p>
+        <h1 class="title">Sobre mi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/aboutMe.JPG" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experiencia</h3>
+                        <p>+2 años <br> Full-Stack Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Educación</h3>
+                        <p>Certified Tech Developer <br> Digital House</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perspiciatis voluptate, itaque sequi quo ea maiores modi amet ad eligendi libero ducimus? Amet totam accusantium dolorum facilis enim dignissimos laudantium!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explora mi</p>
+        <h1 class="title">Experiencia</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML & CSS</h3>
+                                <p>Experimentada</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experimentada</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Experimentada</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Typescript & Angular</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Scripting</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Gitlab</h3>
+                                <p>Basico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Mira mis</p>
+        <h1 class="title">Proyectos recientes</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Proyecto Uno</h2>
+                <div class="btn-container">
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://github.com'">
+                        Github
+                    </buton>
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://putatoo.com/'">Demo</buton>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Proyecto Dos</h2>
+                <div class="btn-container">
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://github.com'">
+                        Github
+                    </buton>
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://putatoo.com/'">Demo</buton>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Proyecto Tres</h2>
+                <div class="btn-container">
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://github.com'">
+                        Github
+                    </buton>
+                    <buton class="btn btn-color-2 project-btn" onClick="location.href='https://putatoo.com/'">Demo</buton>
+                </div>
+            </div>           
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#projects'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">
+            Conecta con migo
+        </p>
+        <h1 class="title">Contacto</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:brugosofi@gmail.com">brugosofi@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/sofiabrugo/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sofia Brugo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
