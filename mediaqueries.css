@@ -25,7 +25,7 @@
     .arrow{
         display: none;
     }
-    .social-links-container{
+    /* .social-links-container{
         position: fixed;
         bottom: 0; 
         left: 50%; 
@@ -41,7 +41,10 @@
         justify-content: center;
         flex-direction: row;
         bottom: 0;
-    }
+    } */
+     .social-links-container{
+        visibility: hidden;
+     }
     section, .section-container{
         height: fit-content;
     }
