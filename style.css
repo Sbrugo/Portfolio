@@ -54,7 +54,7 @@ nav {
 }
 
 a {
-  color: #ae5d16;
+  color: #d49d43;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -74,7 +74,7 @@ a:hover {
 }
 .logo {
   font-size: 2rem;
-  color: #ae5d16;
+  color: #d49d43;
 }
 .logo:hover {
   cursor: default;
@@ -128,7 +128,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #1f1d1b;
+  color: #d49d43;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -337,7 +337,9 @@ article {
 article .icon {
   cursor: default;
 }
-
+.subtitle__2 {
+  color: #f277b0;
+}
 /* PROJECTS SECTION */
 #projects {
   position: relative;
@@ -393,6 +395,9 @@ article .icon {
 }
 .email-icon {
   height: 2.5rem;
+}
+#contact a {
+  color: black;
 }
 /*FOOTER*/
 footer {
