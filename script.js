@@ -1,5 +1,9 @@
 //variables
-const proyectosJavascript = document.querySelector('.details-container');
+const tarjetas = document.querySelectorAll('.about-containers .details-container');
+const titulos = document.querySelectorAll('div h3 a');
+
+
+
 
 function toggleMenu(){
     const menu = document.querySelector(".menu-links");
@@ -8,6 +12,3 @@ function toggleMenu(){
     icon.classList.toggle("open")
 }
 
-proyectosJavascript.addEventListener('click', function(){
-    console.log("funciona onclick");
-})
