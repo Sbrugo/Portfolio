@@ -407,3 +407,13 @@ footer {
 footer p {
   text-align: center;
 }
+
+/*JAVASCRIPT*/
+article h3 a {
+  color: #1f1d1b;
+  text-decoration: none;
+}
+article h3 a:hover {
+  color: #d49d43;
+  text-decoration: none;
+}
