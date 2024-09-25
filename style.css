@@ -4,10 +4,12 @@
 * {
   padding: 0;
   margin: 0;
+  scrollbar-width: thin;
+  scroll-padding: 20px
 }
 body {
   font-family: "Poppins", sans-serif;
-  color: #1f1d1b;
+  color: #0f0f18;
 }
 html {
   scroll-behavior: smooth;
@@ -15,6 +17,7 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+
 
 /*TRANSITION*/
 a,
@@ -259,6 +262,10 @@ section {
 .btn-container {
   gap: 1rem;
 }
+/*BUTTON SIZES */
+.btn-sm{
+  width: 5.5rem;
+}
 
 /* ABOUT SECTION */
 #about {
@@ -268,7 +275,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .about-details-container {
   justify-content: center;
@@ -340,26 +347,51 @@ article .icon {
 .subtitle__2 {
   color: #f277b0;
 }
+.subtitle__3{
+  color: #232D4F;
+}
 /* PROJECTS SECTION */
 #projects {
   position: relative;
 }
+#projects .experience-details-container .about-containers{
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.project{
+  width: 270px;
+  height: 373px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.project-pic-container{
+  width: 80px;
+}
+.project-pic-container img{
+  width: 100%;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
+.project article{
+  width: 100%;
+}
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 55%;
 }
 .project-title {
-  margin: 1rem;
   color: #1f1d1b;
 }
 .project-btn {
   color: #1f1d1b;
   border-color: rgb(163, 163, 163);
+}
+.project h3{
+  color: #1f1d1b;
 }
 
 /* CONTACT PAGE */
@@ -368,7 +400,6 @@ article .icon {
   display: flex;
   justify-self: center;
   flex-direction: column;
-  height: 70vh;
 }
 .contact-info-upper-container {
   display: flex;
@@ -409,11 +440,15 @@ footer p {
 }
 
 /*JAVASCRIPT*/
-article h3 a {
+div h3 a {
   color: #1f1d1b;
   text-decoration: none;
 }
-article h3 a:hover {
+div h3 a:hover {
   color: #d49d43;
   text-decoration: none;
+}
+#projects a:hover{
+  text-decoration: none;
+  background-color: azure;
 }
